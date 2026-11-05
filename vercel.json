@@ -23,5 +23,9 @@
             "src": "/(.*)",
             "dest": "/api/index.php"
         }
+        {
+            "src": "/laravel-test",
+            "dest": "/api/laravel-test.php"
+        }
     ]
 }
