@@ -14,17 +14,11 @@ try {
     $app = require __DIR__ . '/../bootstrap/app.php';
     echo "LARAVEL BOOTSTRAP BERHASIL\n";
 
-    $kernel = $app->make(
-        Illuminate\Contracts\Http\Kernel::class
-    );
-
     $request = Illuminate\Http\Request::capture();
-    $response = $kernel->handle($request);
 
-    echo "LARAVEL REQUEST BERHASIL\n";
-    echo "HTTP STATUS: " . $response->getStatusCode() . "\n";
+    $app->handleRequest($request);
 
-    $kernel->terminate($request, $response);
+    echo "\nLARAVEL REQUEST SELESAI\n";
 
 } catch (Throwable $e) {
     error_log(
@@ -32,7 +26,7 @@ try {
         get_class($e) . ': ' . $e->getMessage()
     );
 
-    echo "LARAVEL ERROR\n";
+    echo "\nLARAVEL ERROR\n";
     echo "ERROR TYPE: " . get_class($e) . "\n";
     echo "Periksa Runtime Logs Vercel.\n";
 }
