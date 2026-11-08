@@ -1,15 +1,16 @@
-﻿<?php
+﻿
+<?php
 
-echo "PHP VERSION: " . PHP_VERSION . "\n";
+header('Content-Type: text/plain; charset=UTF-8');
 
-echo "COMPOSER AUTOLOAD: ";
-echo file_exists(__DIR__ . '/../vendor/autoload.php')
-    ? "ADA\n" : "TIDAK ADA\n";
+$result = setcookie('cbt_test', 'ok', [
+    'expires' => time() + 300,
+    'path' => '/',
+    'secure' => true,
+    'httponly' => true,
+    'samesite' => 'Lax',
+]);
 
-echo "LARAVEL BOOTSTRAP: ";
-echo file_exists(__DIR__ . '/../bootstrap/app.php')
-    ? "ADA\n" : "TIDAK ADA\n";
-
-echo "PUBLIC INDEX: ";
-echo file_exists(__DIR__ . '/../public/index.php')
-    ? "ADA\n" : "TIDAK ADA\n";
+echo $result
+    ? 'COOKIE TEST BERHASIL'
+    : 'COOKIE TEST GAGAL';
