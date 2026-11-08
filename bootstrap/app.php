@@ -1,3 +1,4 @@
+
 <?php
 
 use Illuminate\Foundation\Application;
@@ -11,9 +12,15 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+
+        // Agar Laravel mengenali HTTPS dari Vercel
+        $middleware->trustProxies(at: '*');
+
+        // Konfigurasi CSRF yang sudah ada
         $middleware->validateCsrfTokens(except: [
             'logout',
         ]);
+
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //
