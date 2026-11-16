@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>@yield('title', 'Dashboard') - CBT SMAN 8</title>
+    <title>@yield('title', 'Dashboard') - Cahaya Amanah Islamic High School</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="dashboard-body">
@@ -12,7 +12,7 @@
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <img src="{{ asset('images/logo.png') }}" alt="Logo" width="32" class="sidebar-logo">
-                <span class="sidebar-brand">CBT SMAN 8</span>
+                <span class="sidebar-brand">CBT Cahaya Amanah</span>
                 @if (!empty($currentUser['is_coordinator']))
                     <span class="sidebar-badge" style="background: #f59e0b; color: #fff; font-weight: 700;">KOORDINATOR</span>
                 @else

@@ -11,7 +11,7 @@
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3">
                     <div>
                         <h1 class="h4 mb-1 fw-bold">Selamat Datang, {{ $currentUser['name'] }}</h1>
-                        <p class="text-muted mb-0">Sistem Informasi CBT SMAN 8 Tangerang Selatan</p>
+                        <p class="text-muted mb-0">Sistem Informasi CBT Cahaya Amanah Islamic High School</p>
                     </div>
                     <span class="badge bg-primary text-capitalize py-2 px-3 rounded-pill" style="font-size: 0.8rem;">{{ $currentUser['role'] === 'murid' ? 'Siswa' : (!empty($currentUser['is_coordinator']) ? 'Koordinator CBT' : 'Guru / Pengajar') }}</span>
                 </div>

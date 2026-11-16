@@ -10,8 +10,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center fw-bold" href="{{ url('/') }}">
-                <img src="{{ asset('images/logo.png') }}" alt="Logo SMAN 8" width="34" class="me-2">
-                <span>SMAN 8 Tangerang Selatan</span>
+                <img src="{{ asset('images/logo.png') }}" alt="Logo Cahaya Amanah Islamic High School" width="34" class="me-2">
+<span>Cahaya Amanah Islamic High School</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>

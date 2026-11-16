@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portal CBT - SMAN 8 Tangerang Selatan</title>
+    <title>CBT - Cahaya Amanah Islamic High School</title>
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -51,7 +51,7 @@
         }
 
         .hero-title-main {
-            font-size: 4rem;
+            font-size: clamp(2rem, 4vw, 3.5rem);
             font-weight: 800;
             margin: 0;
             line-height: 1.1;
@@ -176,7 +176,10 @@
         <!-- Left Side: Branding -->
         <div class="brand-side">
             <div class="brand-content">
-                <h1 class="hero-title-main">CBT SMA Negeri 8 Tangsel</h1>
+                <h1 class="hero-title-main">
+    Cahaya Amanah<br>
+    Islamic High School
+</h1>
                 <div class="hero-subtitle-main">Disiplin, Kreatif, Berprestasi</div>
             </div>
         </div>
@@ -219,7 +222,7 @@
                 </div>
 
                 <p class="text-center text-muted mt-5 mb-0" style="font-size: 0.75rem;">
-                    &copy; {{ date('Y') }} SMAN 8 Tangerang Selatan.<br>Hak Cipta Dilindungi.
+                    &copy; {{ date('Y') }} Cahaya Amanah Islamic High School.<br>Hak Cipta Dilindungi.
                 </p>
             </div>
         </div>

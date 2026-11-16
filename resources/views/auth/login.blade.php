@@ -68,7 +68,7 @@
             <!-- End Floating Card -->
             
             <p class="text-center text-muted mt-5 small">
-                &copy; {{ date('Y') }} SMAN 8 Tangerang Selatan. Hak Cipta Dilindungi.
+                &copy; {{ date('Y') }} Cahaya Amanah Islamic High School. Hak Cipta Dilindungi.
             </p>
 
         </div>
